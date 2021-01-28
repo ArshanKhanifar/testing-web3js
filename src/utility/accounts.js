@@ -1,0 +1,10 @@
+export const ACCOUNTS =  [
+  {
+    address: "0x3a000A3C5c7b344f20f590844b9cD3621ee40332",
+    privateKey: "0x944795f604d4b85ba1db91a85019217edca3f26854d73b82b7fa24034433b064"
+  },
+  {
+    address: '0xaE617b3D6fD8D9340B314073bFD4169b97130309',
+    privateKey: '0xb6f0aeea2a98946c554585f7bc29924635504a73cf67186a347a970d6b2f16c7'
+  }
+];

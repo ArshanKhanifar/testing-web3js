@@ -1,0 +1,12 @@
+var helloworldContract = new web3.eth.Contract([{"constant":true,"inputs":[],"name":"speak","outputs":[{"name":"itSays","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"newSaying","type":"string"}],"name":"saySomethingElse","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"}]);
+var helloworld = helloworldContract.deploy({
+     ]
+}).send({
+     from: web3.eth.accounts[0],
+     gas: '4700000'
+   }, function (e, contract){
+    console.log(e, contract);
+    if (typeof contract.address !== 'undefined') {
+         console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
+    }
+ })
